@@ -1,0 +1,37 @@
+# All games
+GET http://localhost:5104/games
+
+###
+# specific game
+GET http://localhost:5104/games/1
+
+###
+# create new game
+POST http://localhost:5104/games
+Content-Type: application/json
+
+{
+    "name":"fuck",
+    "genre":" Adventure",
+    "price":19.19,
+    "releaseDate":"2010-01-01"
+
+}
+###
+# update game
+PUT http://localhost:5104/games/3
+Content-Type: application/json
+
+{
+    "name": "Max Payne",
+    "genre": "Action Adventure",
+    "price": 19.19,
+    "releaseDate": "2010-01-01"
+}
+
+###
+# Delete game
+DELETE  http://localhost:5104/games/2
+
+
+

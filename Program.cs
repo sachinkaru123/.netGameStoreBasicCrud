@@ -13,6 +13,8 @@ internal class Program
         var app = builder.Build();
 
         app.MapGamesEndPoints();
+
+        app.MigrationDb();
         
         app.Run();
     }

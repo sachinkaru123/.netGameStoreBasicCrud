@@ -7,9 +7,9 @@ internal class Program
     {
         var builder = WebApplication.CreateBuilder(args);
 
-        var connStr = "Data Source=GameStore.db";
+        var connStr = builder.Configuration.GetConnectionString("GameStore");
         builder.Services.AddSqlite<GameStoreContext> (connStr);
-        
+
         var app = builder.Build();
 
         app.MapGamesEndPoints();

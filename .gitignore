@@ -4,6 +4,7 @@ bin/
 obj/
 out/
 
+#db geberated data
 GameStore.db-shm
 GameStore.db-wal
 

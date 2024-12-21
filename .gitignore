@@ -1,7 +1,5 @@
 # Ignore GameStore.db file
 GameStore.db
-
-# Build results
 bin/
 obj/
 out/

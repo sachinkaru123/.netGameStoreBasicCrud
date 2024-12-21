@@ -10,6 +10,7 @@ using WebApplication1.Endpoints;
         var app = builder.Build();
 
         app.MapGamesEndPoints();
+        app.MapGenresEndpoints();
 
         await app.MigrationDbAsync();
         

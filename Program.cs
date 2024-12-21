@@ -1,10 +1,7 @@
 using WebApplication1.Data;
 using WebApplication1.Endpoints;
 
-internal class Program
-{
-    private static void Main(string[] args)
-    {
+
         var builder = WebApplication.CreateBuilder(args);
 
         var connStr = builder.Configuration.GetConnectionString("GameStore");
@@ -14,8 +11,7 @@ internal class Program
 
         app.MapGamesEndPoints();
 
-        app.MigrationDb();
+        await app.MigrationDbAsync();
         
         app.Run();
-    }
-}
+    

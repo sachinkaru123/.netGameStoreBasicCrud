@@ -10,27 +10,27 @@ namespace WebApplication1.Endpoints;
 public static class GameEndPoint
 {
     // private static readonly List<GameSummeryDto> games = [
-         new (
-        Id: 1,
-        Name: "Mystic Quest",
-        Genre: "Adventure",
-        Price: 19.99m,
-        ReleaseDate: new DateOnly(2023, 10, 15)
-    ),
-    new (
-        Id: 2,
-        Name: "Battle Zone X",
-        Genre: "Action",
-        Price: 49.99m,
-        ReleaseDate: new DateOnly(2024, 1, 20)
-    ),
-    new (
-        Id: 3,
-        Name: "Puzzle Mania",
-        Genre: "Puzzle",
-        Price: 9.99m,
-        ReleaseDate: new DateOnly(2022, 7, 5)
-    )];
+    //      new (
+    //     Id: 1,
+    //     Name: "Mystic Quest",
+    //     Genre: "Adventure",
+    //     Price: 19.99m,
+    //     ReleaseDate: new DateOnly(2023, 10, 15)
+    // ),
+    // new (
+    //     Id: 2,
+    //     Name: "Battle Zone X",
+    //     Genre: "Action",
+    //     Price: 49.99m,
+    //     ReleaseDate: new DateOnly(2024, 1, 20)
+    // ),
+    // new (
+    //     Id: 3,
+    //     Name: "Puzzle Mania",
+    //     Genre: "Puzzle",
+    //     Price: 9.99m,
+    //     ReleaseDate: new DateOnly(2022, 7, 5)
+    // )];
 
     public static RouteGroupBuilder MapGamesEndPoints(this WebApplication app)
     {

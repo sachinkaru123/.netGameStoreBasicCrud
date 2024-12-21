@@ -11,10 +11,10 @@ POST http://localhost:5104/games
 Content-Type: application/json
 
 {
-    "name":"fuck",
-    "genre":" Adventure",
-    "price":19.19,
-    "releaseDate":"2010-01-01"
+    "name": "Max Payne",
+    "genreId": 2,
+    "price": 99.19,
+    "releaseDate": "2010-01-01"
 
 }
 ###
@@ -23,8 +23,8 @@ PUT http://localhost:5104/games/3
 Content-Type: application/json
 
 {
-    "name": "Max Payne",
-    "genre": "Action Adventure",
+    "name": "Max Payne 3",
+    "genreId": 1,
     "price": 19.19,
     "releaseDate": "2010-01-01"
 }

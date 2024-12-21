@@ -13,4 +13,16 @@ public class GameStoreContext(DbContextOptions<GameStoreContext> options)
 
 
     public int MyProperty {get; set;}
+
+    protected override void OnModelCreating(ModelBuilder modelBuilder)
+    {
+        // base.OnModelCreating(modelBuilder);
+        modelBuilder.Entity<Genre>().HasData(
+            new {Id =1, Name = "Fighting"},
+            new {Id =2, Name = "Action"},
+            new {Id =3, Name = "Racing"}
+
+
+        );
+    }
 }

@@ -11,10 +11,10 @@ POST http://localhost:5104/games
 Content-Type: application/json
 
 {
-    "name":"fuck",
-    "genre":" Adventure",
-    "price":19.19,
-    "releaseDate":"2010-01-01"
+    "name": "Max Payne",
+    "genreId": 2,
+    "price": 19.19,
+    "releaseDate": "2010-01-01"
 
 }
 ###
